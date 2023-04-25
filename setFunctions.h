@@ -34,7 +34,7 @@ set<T> operator- (set<T> set1, set<T> set2)
     set<T> set3 = set1;
     for(typename set<T>::iterator itr = set2.begin() ; itr != set2.end(); itr++)
     {
-        if(set3.find(*itr)!=set2.end())
+        if(set3.find(*itr)!=set3.end())
         {
             set3.erase(*itr);
         }
